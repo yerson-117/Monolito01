@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using WebApplicationEmployees.Models;
 
 namespace WebApplicationEmployees.Data
 {
@@ -12,5 +13,7 @@ namespace WebApplicationEmployees.Data
             : base(options)
         {
         }
+
+        public DbSet<Employee> Employees { set; get; }
     }
 }
